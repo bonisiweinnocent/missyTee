@@ -42,4 +42,41 @@ priceRangeElem.addEventListener('change', function(evt){
 		});
 });
 
+//fields to be read from the DOM
+const domFields = {
+    description,
+    image,
+    gender,
+    season,
+    price
+};
+
+axios.post('/api/garments', domFields)
+    .then((result) => {
+        // show snackbar - with success message
+        console.log(result.data);
+    })
+    .catch(err => {
+        console.log(err);
+    });
+
+
 filterData();
+
+
+
+
+
+
+
+// snackbar function
+function message() {
+	
+	var x = document.getElementById("snackbar");
+  
+	
+	x.className = "show";
+  
+	
+	setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }

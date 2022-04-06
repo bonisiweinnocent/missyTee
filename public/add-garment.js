@@ -1,4 +1,4 @@
-const message = document.querySelector('.message');
+// const message = document.querySelector('.message');
 const addGarmetBtn = document.querySelector('.addGarmentBtn');
 const hideAddGarmetBtn = document.querySelector('.hideAddGarmetBtn');
 const addGarmetSection = document.querySelector('.add.garment');
