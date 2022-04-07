@@ -13,11 +13,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-
-
-
-
-
 // enable the static folder...
 app.use(express.static('public'));
 // parse application/x-www-form-urlencoded
@@ -90,8 +85,6 @@ app.get('/api/garments/price/:price', function (req, res) {
     });
 });
 
-
-
 app.post('/api/garments', (req, res) => {
 
     // get the fields send in from req.body
@@ -102,7 +95,7 @@ app.post('/api/garments', (req, res) => {
         season,
         price
     } = req.body;
-
+console.log(req.body);
     // add some validation to see if all the fields are there.
     // only 3 fields are made mandatory here
     // you can change that

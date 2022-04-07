@@ -1,4 +1,4 @@
-// const message = document.querySelector('.message');
+const message = document.querySelector('.message');
 const addGarmetBtn = document.querySelector('.addGarmentBtn');
 const hideAddGarmetBtn = document.querySelector('.hideAddGarmetBtn');
 const addGarmetSection = document.querySelector('.add.garment');
@@ -16,7 +16,7 @@ function showMessage(value){
 
 function toggleAddGarmetScreen() {
 	addGarmetSection.classList.toggle('hidden');
-	addGarmetButtonSection.classList.toggle('hidden');
+	addGarmetButtonSection.classList.toggle('show');
 }
 
 hideAddGarmetBtn.addEventListener('click', function(evt) {
