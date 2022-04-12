@@ -28,11 +28,7 @@ app.set('view engine', 'express.handlebars');
 const PORT = process.env.PORT || 4017;
 
 // API routes to be added here
-app.get('/api/garments', function (req, res) {
-    // note that this route just send JSON data to the browser
-    // there is no template
-    res.json({ garments });
-});
+
 
 
 app.get('/api/garments', function (req, res) {
@@ -95,7 +91,7 @@ app.post('/api/garments', (req, res) => {
         season,
         price
     } = req.body;
-console.log(req.body);
+    console.log(req.body);
     // add some validation to see if all the fields are there.
     // only 3 fields are made mandatory here
     // you can change that

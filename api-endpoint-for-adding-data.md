@@ -17,7 +17,7 @@ const domFields = {
 
 axios.post('/api/garments', domFields)
   .then((result) => {
-      // show snackbar - with success message
+    
       console.log(result.data);
   })
   .catch(err => {
@@ -28,7 +28,7 @@ axios.post('/api/garments', domFields)
 
 > Create a snackbar using these [instructions](https://www.w3schools.com/howto/howto_js_snackbar.asp). 
 
-Note the `domFields` object which values should be read from the DOM.
+Note the `` object which values should be read from the DOM.
 
 ## Create a new POST route
 

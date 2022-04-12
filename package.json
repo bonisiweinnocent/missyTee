@@ -10,10 +10,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "express-handlebars": "^6.0.3"
+    "express-handlebars": "^6.0.3",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonisiweinnocent/api-creation-workshop.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/bonisiweinnocent/api-creation-workshop/issues"
+  },
+  "homepage": "https://github.com/bonisiweinnocent/api-creation-workshop#readme"
 }
